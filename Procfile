@@ -1,1 +1,1 @@
-web: java -jar target/myapp.jar
+web: java -jar target/ImageFormatConverter-0.0.1-SNAPSHOT.jar
