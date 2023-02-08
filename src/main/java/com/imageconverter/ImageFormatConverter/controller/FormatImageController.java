@@ -21,6 +21,12 @@ public class FormatImageController {
     @Autowired
     FormatImage formatImage;
 
+    @GetMapping("/")
+    @ResponseStatus(HttpStatus.OK)
+    public String home() {
+        return "Welcome";
+    }
+
     @PostMapping(value = "/toPng", produces = MediaType.IMAGE_PNG_VALUE)
     @ResponseStatus(HttpStatus.OK)
     public byte[] convertToPng(@RequestParam("fileToConvert") MultipartFile fileToConvert) {
