@@ -50,7 +50,7 @@ public class FormatImageImpl implements FormatImage {
             try {
                 ImageIO.write(bufferedImage, "JPEG", outputFile);
             } catch (IOException e) {
-                log.error("Error writing JPEG file: " + e);
+                log.error("Error writing JPEG file : " + e);
             }
         }
         catch (ImageReadException | IOException e) {
